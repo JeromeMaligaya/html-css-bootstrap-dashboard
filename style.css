@@ -1,11 +1,16 @@
 /*generics*/
-
+.navbar-brand img{
+    width: 50px;
+}
 /*layout*/
 
 /*color*/
 
 
 /*bg*/
+.bg-header{
+    background-color: #27292C;
+}
 
 /*btn*/
 
