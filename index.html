@@ -21,36 +21,132 @@
 
     <body>
         <header>
-              <nav class="navbar navbar-expand-lg bg-header">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#"><img class="img-fluid" src="img/duck.png" alt=""></a>
-                  <button class="navbar-toggler border-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon border-light text-light"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link text-light active" aria-current="page" href="#">Catalogo LIbri</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-white-50" href="#">Anagrafica Utenti</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-white-50" href="#">Storico Prestiti</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-white-50" href="#">Help</a>
-                      </li>
+          <nav class="navbar navbar-expand-lg bg-header">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img class="img-fluid" src="img/duck.png" alt=""></a>
+              <button class="navbar-toggler border-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link text-light active" aria-current="page" href="#">Catalogo LIbri</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white-50" href="#">Anagrafica Utenti</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white-50" href="#">Storico Prestiti</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white-50" href="#">Help</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search">
+                  <button class="btn btn-outline-success border-light text-light" type="submit">Cerca</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </header>
+
+        <main>
+          <div class="container d-lg-flex">
+
+            <section id="top-card" class="row col-lg-9 flex-lg-column">
+              <!-- header section-->
+              <div class="col-12 ">
+                  h2 + btn add book
+              </div>
+              <!-- library table -->
+              <ul class="col-12" >
+                <li class="row bg-white py-1 border-bottom">
+                  <div class="col-6">titolo</div>
+                  <div class="d-none d-md-block col-md-2">data</div>
+                  <div class="col-4 col-md-2">stato</div>
+                  <div class="col-2 col-md-2">azioni</div>
+                </li>
+                <li class="row bg-light py-1 border-bottom">
+                  <div class="col-6">titolo</div>
+                  <div class="d-none d-md-block col-md-2">data</div>
+                  <div class="col-4 col-md-2">stato</div>
+                  <div class="col-2 col-md-2">azioni</div>
+                </li>
+
+              </ul>
+
+
+            </section>
+
+            <section id="bottom-card" class="row d-flex flex-column col-lg-3">
+              
+              <!-- todo -->
+              <div id="Todo-Card" class="card px-0">
+                <div class="card-header">
+                  <h3>h3</h3>
+                </div>
+                <div class="card-body">
+                  <div class="card">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item d-flex align-items-center"><input class="me-2" type="checkbox" name="segreteria"> An item</li>
+                      <li class="list-group-item d-flex align-items-center"><input class="me-2" type="checkbox" name="prestiti">A second item</li>
+                      <li class="list-group-item d-flex align-items-center"><input class="me-2" type="checkbox" name="libri nuovi">A third item</li>
                     </ul>
-                    <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search">
-                      <button class="btn btn-outline-success border-light text-light" type="submit">Cerca</button>
-                    </form>
                   </div>
                 </div>
-              </nav>
+              </div>
 
-        </header>
+              <!-- faq -->
+              <div id="faq-Card" class="card px-0">
+                <div class="card-header">
+                  <h3>h3</h3>
+                </div>
+                <div class="card-body">
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </main>
+
 
         <!-- java -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

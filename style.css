@@ -2,6 +2,12 @@
 .navbar-brand img{
     width: 50px;
 }
+
+.col{
+    min-height: 25px;
+}
+
+
 /*layout*/
 
 /*color*/
@@ -11,7 +17,16 @@
 .bg-header{
     background-color: #27292C;
 }
+.bg-li-odd{
+    background-color:#EFEFF0;
+}
 
 /*btn*/
 
 /*utilities*/
+
+/* .container *{
+    border: 1px dashed green;
+}
+ */
+
