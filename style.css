@@ -1,29 +1,9 @@
 /*generics*/
 .navbar-brand img{
     width: 50px;
-}
-
-.col{
-    min-height: 25px;
-}
-
-
-/*layout*/
-
-/*color*/
-
+} 
 
 /*bg*/
 .bg-header{
     background-color: #27292C;
 }
-
-/*btn*/
-
-/*utilities*/
-
-/* .container *{
-    border: 1px dashed green;
-}
- */
-
