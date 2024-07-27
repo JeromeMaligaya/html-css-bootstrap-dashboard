@@ -52,16 +52,18 @@
         </header>
 
         <main>
-          <div class="container d-lg-flex">
-
-            <section id="top-card" class="row col-lg-9 flex-lg-column">
+          <div class="container d-lg-flex gap-lg-5">
+            <!-- top main card -->
+            <section id="top-main-card" class="row col-lg-9 flex-lg-column my-3">
               <!-- header section-->
-              <div class="col-12 ">
-                  h2 + btn add book
+              <div class="col-12 d-flex justify-content-between align-items-center">
+                  <h2 class="fw-normal fs-4 m-0">Catalogo Libri</h2>
+                  <button type="button" class="btn btn-primary btn-sm"><a class="text-white text-decoration-none" href="pages/form.html" target="_blank">Aggiungi Libro</a></button>
               </div>
               <!-- library table -->
-              <ul class="col-12" >
+              <ul class="col-12 my-2" >
                 <li class="row bg-white py-1 border-bottom">
+                  <!-- title cells -->
                   <div class="col-6">titolo</div>
                   <div class="d-none d-md-block col-md-2">data</div>
                   <div class="col-4 col-md-2">stato</div>
@@ -73,14 +75,12 @@
                   <div class="col-4 col-md-2">stato</div>
                   <div class="col-2 col-md-2">azioni</div>
                 </li>
-
               </ul>
-
-
             </section>
-
+            
+            <!-- bottom main card -->
             <section id="bottom-card" class="row d-flex flex-column col-lg-3">
-              
+
               <!-- todo -->
               <div id="Todo-Card" class="card px-0">
                 <div class="card-header">
