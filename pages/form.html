@@ -25,7 +25,7 @@
             <div class="container-fluid">
               <a class="navbar-brand" href="#"><img class="img-fluid" src="../img/duck.png" alt=""></a>
               <button class="navbar-toggler border-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span><span><i class="fa-solid fa-bars text-secondary"></i></span></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -52,7 +52,67 @@
         </header>
 
         <main class="px-1">
-          <div class="container d-lg-flex gap-lg-5 py-4">
+          <div class="container py-4">
+            <h1>Nuovo Libro</h1>
+            <form class="row g-3 mt-1">
+              <!-- author name -->
+              <div class="col-6">
+                <label for="author-name" class="form-label">Nome Autore</label>
+                <input type="text" class="form-control" id="author-name" placeholder="Inserisci il nome dell'autore">
+              </div>
+              <!-- author surname -->
+              <div class="col-6">
+                <label for="author-surmane" class="form-label">Cognome Autore</label>
+                <input type="text" class="form-control" id="author-surname" placeholder="Inserisci il cognome dell'autore">
+              </div>
+              <!-- title book -->
+              <div class="col-12">
+                <label for="title-book" class="form-label">Titolo</label>
+                <input type="text" class="form-control" id="title-book" placeholder="Inserisci il titolo del libro">
+                <p class="text-secondary my-1">Titolo versione italiana</p>
+              </div>
+              <!-- gender -->
+              <div class="col-md-4">
+                <label for="gender" class="form-label">Genere</label>
+                <select id="gender" class="form-select">
+                  <option value="" selected disabled>Scegli il genere</option>
+                  <option value="male">M</option>
+                  <option value="female">F</option>
+                </select>
+              </div>
+              <!-- year -->
+              <div class="col-md-4">
+                <label for="year" class="form-label">Anno di pubblicazione</label>
+                <input type="text" class="form-control" id="year" placeholder="Inserisci l'anno">
+              </div>
+              <!-- ISBN code-->
+              <div class="col-md-4">
+                <label for="isbn" class="form-label">ISBN#</label>
+                <input type="text" class="form-control" id="inputZip" placeholder="Inserisci il codice ISBN#">
+              </div>
+              <!-- hr -->
+              <div class="col-12">
+                <hr>
+              </div>
+              <!-- notes -->
+              <div class="col-12">
+                <label class="form-label">Note</label>
+                <textarea class="form-control" placeholder="Inserisci eventuali note sul libro" id="notes" rows="3"></textarea>
+              </div>
+              <!-- checkbox available -->
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    Disponibile anche in digitale
+                  </label>
+                </div>
+              </div>
+              <!-- add button -->
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Aggiungi Libro</button>
+              </div>
+            </form>
             
           </div>
         </main>

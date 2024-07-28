@@ -7,3 +7,8 @@
 .bg-header{
     background-color: #27292C;
 }
+
+/* form form.html */
+form textarea{
+    resize: none;
+}
