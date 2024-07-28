@@ -12,3 +12,10 @@
 form textarea{
     resize: none;
 }
+
+/* hover btn li */
+#top-main-card li button:hover{
+    background-color: #22222270 !important;
+    border-color:#555 !important
+}
+
